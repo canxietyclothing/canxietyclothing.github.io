@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://canxietyclothing.github.io/sitemap.xml

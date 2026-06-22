@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">CANxiety First Drop folded garments</title>
+  <desc id="desc">Editorial still life showing stacked black and off-white garments.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#191919"/><stop offset=".55" stop-color="#080808"/><stop offset="1" stop-color="#242424"/></linearGradient>
+    <linearGradient id="black" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#333"/><stop offset=".5" stop-color="#101010"/><stop offset="1" stop-color="#282828"/></linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1eee7"/><stop offset=".55" stop-color="#aaa8a2"/><stop offset="1" stop-color="#dedbd4"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <path d="M0 1110L1200 750V1500H0Z" fill="#4b0c14" opacity=".7"/>
+  <ellipse cx="600" cy="1220" rx="470" ry="95" fill="#000" opacity=".7" filter="url(#shadow)"/>
+  <g transform="rotate(-4 600 850)">
+    <rect x="205" y="790" width="790" height="360" rx="24" fill="#101010" stroke="#4a4a4a" stroke-width="4"/>
+    <path d="M205 920Q600 1010 995 920" fill="none" stroke="#303030" stroke-width="5"/>
+    <text x="600" y="1012" fill="#e8122b" font-family="Arial" font-size="94" font-weight="900" text-anchor="middle" letter-spacing="-8">CAN</text>
+  </g>
+  <g transform="rotate(3 600 650)">
+    <rect x="250" y="535" width="700" height="330" rx="22" fill="url(#white)" stroke="#c8c4bd" stroke-width="4"/>
+    <path d="M250 640Q600 730 950 640" fill="none" stroke="#aaa7a0" stroke-width="4"/>
+    <text x="600" y="743" fill="#090909" font-family="Arial" font-size="84" font-weight="900" text-anchor="middle" letter-spacing="-7">CAN</text>
+    <line x1="500" y1="773" x2="700" y2="773" stroke="#df1027" stroke-width="9"/>
+  </g>
+  <g transform="rotate(-1 600 480)">
+    <rect x="285" y="320" width="630" height="300" rx="20" fill="url(#black)" stroke="#505050" stroke-width="4"/>
+    <path d="M285 420Q600 500 915 420" fill="none" stroke="#383838" stroke-width="4"/>
+    <text x="600" y="530" fill="#e8122b" font-family="Arial" font-size="70" font-weight="900" text-anchor="middle">001</text>
+  </g>
+  <text x="60" y="90" fill="#bbb" font-family="Arial" font-size="19" font-weight="700" letter-spacing="5">FIRST DROP / BUNDLE STUDY</text>
+  <text x="1140" y="1415" fill="#8d8d8d" font-family="Arial" font-size="16" font-weight="700" letter-spacing="4" text-anchor="end">NO RESTOCKS PROMISED</text>
+</svg>

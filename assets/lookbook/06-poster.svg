@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">CANxiety Drop 001 campaign poster</title>
+  <desc id="desc">Bold red, black and silver launch poster for the CANxiety founder drop.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e3132c"/><stop offset=".58" stop-color="#b1081d"/><stop offset="1" stop-color="#57030d"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect x="42" y="42" width="1116" height="1416" fill="none" stroke="#fff" stroke-width="2" opacity=".52"/>
+  <circle cx="920" cy="310" r="250" fill="none" stroke="#080808" stroke-width="78" opacity=".88"/>
+  <path d="M920 60A250 250 0 0 1 1140 430" fill="none" stroke="#e8e5de" stroke-width="78" opacity=".42"/>
+  <text x="70" y="130" fill="#fff" font-family="Arial" font-size="20" font-weight="700" letter-spacing="7">CANXIETY CLOTHING / UK</text>
+  <text x="65" y="675" fill="#070707" font-family="Arial" font-size="276" font-weight="900" letter-spacing="-30">CAN</text>
+  <text x="72" y="785" fill="#f0ede6" font-family="Arial" font-size="106" font-weight="900" letter-spacing="5">OVER CAN'T.</text>
+  <line x1="72" y1="835" x2="1118" y2="835" stroke="#080808" stroke-width="14"/>
+  <text x="75" y="955" fill="#fff" font-family="Georgia, serif" font-size="76" font-style="italic">Wear the pressure.</text>
+  <text x="75" y="1045" fill="#fff" font-family="Georgia, serif" font-size="76" font-style="italic">Own the moment.</text>
+  <g transform="translate(74 1200)">
+    <rect width="390" height="120" fill="#090909"/>
+    <text x="28" y="50" fill="#999" font-family="Arial" font-size="16" font-weight="700" letter-spacing="5">FOUNDER DROP</text>
+    <text x="28" y="91" fill="#fff" font-family="Arial" font-size="27" font-weight="900" letter-spacing="4">ACCESS / 0001</text>
+  </g>
+  <text x="1125" y="1400" fill="#fff" font-family="Arial" font-size="17" font-weight="700" letter-spacing="5" text-anchor="end">NORTH YORKSHIRE → GLOBAL</text>
+</svg>

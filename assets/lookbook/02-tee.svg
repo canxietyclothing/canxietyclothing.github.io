@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">CANxiety Heavyweight Tee concept</title>
+  <desc id="desc">Minimal off-white heavyweight tee concept against a silver editorial backdrop.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ece9e1"/><stop offset=".55" stop-color="#aaa8a1"/><stop offset="1" stop-color="#5e5d5a"/></linearGradient>
+    <linearGradient id="tee" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#faf8f1"/><stop offset=".55" stop-color="#d9d6ce"/><stop offset="1" stop-color="#f2efe7"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="25"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect x="55" y="55" width="1090" height="1390" fill="none" stroke="#111" stroke-width="2" opacity=".35"/>
+  <text x="86" y="115" fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="6">DROP 001 / THE SIGNAL TEE</text>
+  <ellipse cx="600" cy="1264" rx="400" ry="65" fill="#111" opacity=".27" filter="url(#shadow)"/>
+  <path d="M432 360Q512 318 600 318Q688 318 768 360L1006 502L888 724L793 670V1245Q600 1300 407 1245V670L312 724L194 502Z" fill="url(#tee)" stroke="#b8b5ad" stroke-width="5"/>
+  <path d="M500 337Q519 427 600 433Q681 427 700 337" fill="#bcb9b2" stroke="#a29f98" stroke-width="4"/>
+  <path d="M518 343Q536 399 600 404Q664 399 682 343" fill="#6b6965" opacity=".72"/>
+  <text x="600" y="740" fill="#090909" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" text-anchor="middle" letter-spacing="-10">CAN</text>
+  <text x="600" y="796" fill="#222" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" letter-spacing="12">XIETY</text>
+  <line x1="475" y1="828" x2="725" y2="828" stroke="#df1027" stroke-width="11"/>
+  <g transform="translate(1020 1230) rotate(90)"><text fill="#202020" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="5">PRESSURE / IDENTITY / MOVEMENT</text></g>
+  <circle cx="112" cy="1350" r="30" fill="#df1027"/><text x="112" y="1357" fill="#fff" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle">01</text>
+</svg>

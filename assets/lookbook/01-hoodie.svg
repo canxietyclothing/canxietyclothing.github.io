@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">CANxiety Signature Hoodie concept</title>
+  <desc id="desc">Dark editorial artwork showing a black heavyweight hoodie with a red CANxiety mark.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="75%"><stop offset="0" stop-color="#373737"/><stop offset=".48" stop-color="#171717"/><stop offset="1" stop-color="#080808"/></radialGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#292929"/><stop offset=".5" stop-color="#101010"/><stop offset="1" stop-color="#232323"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <ellipse cx="620" cy="1270" rx="400" ry="72" fill="#000" opacity=".75" filter="url(#shadow)"/>
+  <circle cx="1020" cy="220" r="280" fill="none" stroke="#df1027" stroke-width="2" opacity=".28"/>
+  <circle cx="1020" cy="220" r="230" fill="none" stroke="#fff" stroke-width="1" opacity=".12"/>
+  <path d="M430 385Q456 210 600 198Q744 210 770 385L925 475L844 740L790 704V1234Q600 1300 410 1234V704L356 740L275 475Z" fill="url(#cloth)" stroke="#4a4a4a" stroke-width="4"/>
+  <path d="M456 351Q472 185 600 178Q728 185 744 351Q695 418 600 425Q505 418 456 351Z" fill="#111" stroke="#404040" stroke-width="4"/>
+  <path d="M494 305Q526 245 600 239Q674 245 706 305Q670 358 600 365Q530 358 494 305Z" fill="#080808"/>
+  <path d="M600 426V630M568 426L545 617M632 426L655 617" stroke="#393939" stroke-width="7"/>
+  <path d="M451 966Q600 1012 749 966V1130Q600 1182 451 1130Z" fill="#151515" stroke="#333" stroke-width="3"/>
+  <text x="600" y="770" fill="#e8122b" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="900" text-anchor="middle" letter-spacing="-8">CAN</text>
+  <text x="600" y="822" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" letter-spacing="9">XIETY / 001</text>
+  <line x1="487" y1="849" x2="713" y2="849" stroke="#e8122b" stroke-width="8"/>
+  <text x="55" y="68" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="5">HEAVYWEIGHT / UNISEX</text>
+  <text x="1144" y="1415" fill="#888" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="4" text-anchor="end">DROP 001 / CAMPAIGN STUDY</text>
+</svg>
