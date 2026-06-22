@@ -211,3 +211,71 @@ founderForm?.addEventListener("submit", (event) => {
     window.location.href = mailto;
   }, 100);
 });
+
+
+// Smooth internal scrolling without leaving #hashtags in the address bar
+document.addEventListener("DOMContentLoaded", () => {
+  const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+  function cleanUrl() {
+    if (window.location.hash) {
+      history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search
+      );
+    }
+  }
+
+  internalLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+
+      if (!targetId || targetId === "#") return;
+
+      const target =
+        targetId === "#top"
+          ? document.body
+          : document.querySelector(targetId);
+
+      if (!target) return;
+
+      event.preventDefault();
+
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: targetId === "#top" ? "start" : "start"
+      });
+
+      // Improve keyboard/accessibility focus without changing the URL
+      if (target !== document.body) {
+        target.setAttribute("tabindex", "-1");
+        target.focus({ preventScroll: true });
+      }
+
+      cleanUrl();
+
+      // Close mobile menu after clicking a menu item
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuToggle = document.querySelector(".menu-toggle");
+
+      if (mobileMenu && menuToggle) {
+        mobileMenu.setAttribute("aria-hidden", "true");
+        menuToggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  });
+
+  // If someone lands on /#founder, scroll there once, then remove the hashtag
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        cleanUrl();
+      }, 250);
+    }
+  }
+});
