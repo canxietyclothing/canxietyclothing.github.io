@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://canxietyclothing.github.io/sitemap.xml
+Sitemap: https://canxiety.co.uk/sitemap.xml
