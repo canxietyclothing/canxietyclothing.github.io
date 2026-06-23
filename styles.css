@@ -708,3 +708,43 @@ h1 {
     max-height: none;
   }
 }
+/* Mobile image fix — prevents long stretched look */
+@media (max-width: 860px) {
+  .hero__image-wrap {
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .product-grid--single .product-card__media,
+  .product-card__media {
+    aspect-ratio: 1 / 1.08;
+    min-height: auto;
+  }
+
+  .lookbook-card img,
+  .lookbook-card--tall img,
+  .lookbook-card--wide img {
+    aspect-ratio: 4 / 4.6;
+    max-height: 26rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+@media (max-width: 35rem) {
+  .hero__image-wrap {
+    aspect-ratio: 4 / 4.4;
+  }
+
+  .product-grid--single .product-card__media,
+  .product-card__media {
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .lookbook-card img,
+  .lookbook-card--tall img,
+  .lookbook-card--wide img {
+    aspect-ratio: 4 / 4.3;
+    max-height: 22rem;
+  }
+}
