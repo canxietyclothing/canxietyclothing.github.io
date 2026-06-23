@@ -101,15 +101,16 @@ button, select { cursor: pointer; }
 }
 
 .brand-mark { justify-self: start; display: inline-flex; }
-.brand-mark__plate {
-  width: 7rem;
-  height: 2.65rem;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  background: var(--paper);
+.brand-mark__plate{
+    background:transparent;
+    padding:0;
+    border:none;
+    box-shadow:none;
 }
-.brand-mark img { width: 5.8rem; height: auto; }
+.brand-mark img{
+    width:260px;
+    height:auto;
+}
 
 .desktop-nav { display: flex; align-items: center; gap: clamp(1.4rem, 3vw, 3rem); }
 .desktop-nav a {
