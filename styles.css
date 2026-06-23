@@ -117,6 +117,12 @@ button, select { cursor: pointer; }
     align-self:center;
     overflow:visible;
 }
+.site-header .brand-mark img{
+  width:150px;
+  height:auto;
+  display:block;
+  filter: contrast(1.25) brightness(1.15);
+}
 .desktop-nav { display: flex; align-items: center; gap: clamp(1.4rem, 3vw, 3rem); }
 .desktop-nav a {
   position: relative;
