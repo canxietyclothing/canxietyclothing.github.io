@@ -589,3 +589,122 @@ h1 em, h2 em {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* CANxiety refinement patch — calmer, cleaner, less oversized */
+
+:root {
+  --page-pad: clamp(1rem, 3vw, 4.25rem);
+}
+
+/* Reduce huge section spacing */
+.section {
+  padding: clamp(3.5rem, 7vw, 7rem) var(--page-pad);
+}
+
+/* Make major titles less aggressive */
+h1 {
+  font-size: clamp(3.2rem, 7vw, 7rem);
+  line-height: 0.86;
+}
+
+.section-heading h2,
+.manifesto h2,
+.founder h2,
+.faq h2,
+.final-cta h2 {
+  font-size: clamp(2.9rem, 6vw, 6.5rem);
+  line-height: 0.88;
+}
+
+/* Fix single product layout */
+.product-grid--single {
+  max-width: 62rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.13);
+}
+
+.product-grid--single .product-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(22rem, 0.9fr);
+  align-items: stretch;
+}
+
+.product-grid--single .product-card__media {
+  aspect-ratio: auto;
+  min-height: 34rem;
+}
+
+.product-grid--single .product-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Make product image feel premium, not massive */
+.product-card__media img {
+  object-position: center top;
+}
+
+/* Calm the lookbook */
+.lookbook-grid {
+  max-width: 74rem;
+  margin: 0 auto;
+  gap: 1.4rem;
+}
+
+.lookbook-card,
+.lookbook-card--tall,
+.lookbook-card--wide,
+.lookbook-card--tall + .lookbook-card,
+.lookbook-card--wide + .lookbook-card,
+.lookbook-card--wide + .lookbook-card + .lookbook-card {
+  grid-column: span 4;
+}
+
+.lookbook-card img,
+.lookbook-card--tall img,
+.lookbook-card--wide img {
+  aspect-ratio: 4 / 5;
+  max-height: 34rem;
+  object-fit: cover;
+}
+
+/* Softer image presentation */
+.hero__image-wrap,
+.product-card__media,
+.lookbook-card img {
+  border-radius: 0.35rem;
+}
+
+/* Better desktop breathing room */
+.section-heading {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile fix */
+@media (max-width: 860px) {
+  .product-grid--single .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid--single .product-card__media {
+    min-height: auto;
+    aspect-ratio: 4 / 4.7;
+  }
+
+  .lookbook-card,
+  .lookbook-card--tall,
+  .lookbook-card--wide {
+    grid-column: 1 / -1;
+  }
+
+  .lookbook-card img,
+  .lookbook-card--tall img,
+  .lookbook-card--wide img {
+    max-height: none;
+  }
+}
