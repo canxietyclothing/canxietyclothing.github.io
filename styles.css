@@ -748,3 +748,34 @@ h1 {
     max-height: 22rem;
   }
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .product-card__media {
+    display: block !important;
+    order: 0 !important;
+    width: 100% !important;
+    min-height: 520px !important;
+    margin-bottom: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .product-card__media img {
+    display: block !important;
+    width: 100% !important;
+    height: 520px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .product-card__body {
+    order: 1 !important;
+  }
+}
