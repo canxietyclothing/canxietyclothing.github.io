@@ -779,3 +779,13 @@ h1 {
     order: 1 !important;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 110px !important;
+  }
+
+  .site-header {
+    height: auto !important;
+  }
+}
