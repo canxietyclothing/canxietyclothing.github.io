@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | CANxiety Clothing</title>
+  <meta name="description" content="Contact CANxiety Clothing for order questions, sizing, returns, collaborations, press, and general enquiries." />
+
+  <style>
+    :root {
+      --bg: #070707;
+      --text: #f4f1ec;
+      --muted: #a7a19a;
+      --red: #8f1616;
+      --border: rgba(255,255,255,0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #181111 0%, var(--bg) 45%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 620px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 42px 30px;
+      background: rgba(255,255,255,0.035);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+      text-align: center;
+    }
+
+    .brand {
+      letter-spacing: 0.16em;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 0.95;
+      margin: 0 0 22px;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 auto 28px;
+      max-width: 480px;
+    }
+
+    .email {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .email:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .small {
+      margin-top: 26px;
+      font-size: 13px;
+      color: #77716b;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 26px;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .back:hover {
+      border-color: var(--red);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="contact-card">
+    <div class="brand">CANXIETY CLOTHING</div>
+
+    <h1>Contact</h1>
+
+    <p>
+      For order questions, sizing, returns, collaborations, press, or general enquiries,
+      contact CANxiety directly below.
+    </p>
+
+    <a class="email" href="mailto:hello@canxiety.co.uk?subject=CANxiety%20Enquiry">
+      hello@canxiety.co.uk
+    </a>
+
+    <p class="small">
+      Please include your order number if your message is about a purchase.
+    </p>
+
+    <a class="back" href="/">Back to CANxiety</a>
+  </main>
+</body>
+</html>
